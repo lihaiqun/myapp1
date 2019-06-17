@@ -38,7 +38,8 @@ class Com extends React.Component {
           this.props.prolist.map(item => {
             return (
               <li key = { item.id } onClick = { this.goDetail.bind(this, item.id) }>
-                { item.title }
+                <img src = { item.images.small } alt = "" />
+                <span>{ item.title }</span>
               </li>
             )
           })

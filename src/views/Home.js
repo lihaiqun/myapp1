@@ -7,7 +7,7 @@ class Com extends React.Component {
     super(props);
     this.state = {
       prolist: [],
-      bannerlist: []
+      bannerlist: [1,2]
     }
   }
   componentDidMount () {
