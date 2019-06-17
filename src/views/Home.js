@@ -1,6 +1,7 @@
 import React from 'react';
 import Prolist from '@/components/common/Prolist';
 import Banner  from '@/components/common/Banner';
+import { NavBar, Icon } from 'antd-mobile';
 class Com extends React.Component {
   constructor (props) {
     super(props);
@@ -26,7 +27,16 @@ class Com extends React.Component {
   render () {
     return (
       <div className = "box">
-        <header className = "header">home header</header>
+        <header className = "header">
+        <NavBar
+          mode="dark"
+          leftContent="Back"
+          rightContent={[
+            <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
+            <Icon key="1" type="ellipsis" />,
+          ]}
+        >NavBar</NavBar>
+        </header>
         <div className = "content">
           <Banner bannerlist = { this.state.bannerlist }/>
           <Prolist prolist = { this.state.prolist } { ...this.props }/>
