@@ -5,8 +5,7 @@ const tabs = [
   { title: '2 Tab', key: 't2' },
   { title: '3 Tab', key: 't3' },
   { title: '4 Tab', key: 't4' },
-  { title: '5 Tab', key: 't5' },
-  { title: '6 Tab', key: 't6' }
+  { title: '5 Tab', key: 't5' }
 ]
 class Com extends React.Component {
   render () {
