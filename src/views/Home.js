@@ -9,6 +9,7 @@ class Com extends React.Component {
   }
   componentDidMount () {
     fetch('http://www.daxunxun.com/douban').then(res => res.json()).then(data => {
+      console.log(this.state)
       this.setState({
         prolist: data
       })
@@ -19,7 +20,7 @@ class Com extends React.Component {
       <div className = "box">
         <header className = "header">home header</header>
         <div className = "content">
-          <Prolist prolist = { this.state.prolist }/>
+          <Prolist prolist = { this.state.prolist } { ...this.props }/>
         </div>
       </div>
     )

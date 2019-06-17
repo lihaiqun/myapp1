@@ -17,6 +17,13 @@ html, body, #root, .container {
     .content {
       @include flex();
       @include rect(100%, auto);
+      .prolist {
+        li {
+          a {
+            @include text-color(#333)
+          }
+        }
+      }
     }
   }
   .footer {
